@@ -7,7 +7,7 @@ const Pricing = () => {
     <section id="pricing" className="min-h-screen pt-[70px] pb-12 relative overflow-hidden">
         <main className="p-5 md:px-5 lg:px-20 flex flex-col gap-20">
             <div>
-            <h1 className="primary-header text-center text-4xl sm:text-5xl">Plans that fit your scale</h1>
+              <h1 className="primary-header text-center text-4xl sm:text-5xl">Plans that fit your scale</h1>
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:px-1 xl:px-20">
@@ -16,14 +16,13 @@ const Pricing = () => {
             </div>
         </main>
         <div className="absolute top-20 md:top-0 -left-10 -z-20 w-[150px] md:w-[300px]">
-            <img width={500} height={500} src="/image-assets/soap-bubble.png" alt="Purple soap bubbles" />
+            <img width={500} height={500} src="../../image-assets/soap-bubble.png" alt="Purple soap bubbles" />
         </div>
-
         <div className="absolute bottom-48 md:bottom-0 -right-[200px] -z-20 w-[150px] md:w-[300px]">
-        <img width={500} height={500} className="scale-x-[-1] -rotate-[35deg]" src="/image-assets/soap-bubble.png" alt="Purple soap bubbles" />
+          <img width={500} height={500} className="scale-x-[-1] -rotate-[35deg]" src="../../image-assets/soap-bubble.png" alt="Purple soap bubbles" />
         </div>
         <div className="absolute bottom-48 md:-top-36 -right-32 -z-20 w-[150px] md:w-[300px]">
-        <img width={500} height={500} className="scale-x-[-1] -rotate-[35deg]" src="/image-assets/soap-bubble-pattern.png" alt="Purple soap bubbles" />
+          <img width={500} height={500} className="scale-x-[-1] -rotate-[35deg]" src="../../image-assets/soap-bubble-pattern.png" alt="Purple soap bubbles" />
         </div>
     </section>
   )

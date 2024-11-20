@@ -17,7 +17,7 @@ const WhyUs = () => {
                                 <h1 className="primary-header text-3xl sm:text-4xl z-5">Intuitive Control</h1>
                                 <p className="text-lg w-[30ch]">Describe your data needs in plain English, and watch our AI make it happen.</p>
                             </div>
-                            <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px]" src="/image-assets/soap-bottles.png" alt="Soap Bottles with data janitors emblem resembling how they produce clean data"/>
+                            <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px]" src="../../image-assets/soap-bottles.png" alt="Soap Bottles with data janitors emblem resembling how they produce clean data"/>
                         </div>
                     </div>
 
@@ -27,7 +27,7 @@ const WhyUs = () => {
                                 <h1 className="primary-header text-3xl sm:text-4xl">Powerful Transformations</h1>
                                 <p className="text-lg w-[30ch]">Our system orchestrates a wide array of data tools to meet your specific requirements.</p>
                             </div>
-                            <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px] order-2 md:order-1" src="/image-assets/cloud-mop.png" alt="A mop cleaning the cloud resembling how at Data janitors data is cleaned"/>
+                            <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px] order-2 md:order-1" src="../../image-assets/cloud-mop.png" alt="A mop cleaning the cloud resembling how at Data janitors data is cleaned"/>
                         </div>
                     </div>
 
@@ -37,7 +37,7 @@ const WhyUs = () => {
                                 <h1 className="primary-header text-3xl sm:text-4xl">Continous Learning</h1>
                                 <p className="text-lg w-[30ch]">With each task, our AI gets smarter, ensuring ever-improving results.</p>
                             </div>
-                            <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px]" src="/image-assets/soap-bottles.png" alt="Soap Bottles with data janitors emblem resembling how they produce clean data"/>
+                            <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px]" src="../../image-assets/soap-bottles.png" alt="Soap Bottles with data janitors emblem resembling how they produce clean data"/>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ const WhyUs = () => {
                 primaryButton="Signup to our Wishlist"
                 secondPrimaryButton="Schedule Free Consultation" 
                 imageStyling="w-[400px] h-[400px]"
-                src="/image-assets/aws-foam.png"
+                src="../../image-assets/aws-foam.png"
                 alt="Foam with the words AWS in the middle to resemble data cleaning."
         />
     </div>

@@ -25,7 +25,7 @@ const FloatingBubbles = () => {
                 opacity: 0,
                 scale: bubble.size / 50
             }}
-            src='/image-assets/bubble-3.png'
+            src='../image-assets/bubble.png'
             animate={{
                 y: '-1700%',
                 x: bubble.initialX + bubble.x,
