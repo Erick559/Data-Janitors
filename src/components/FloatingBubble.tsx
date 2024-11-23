@@ -2,15 +2,14 @@ import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 
 const FloatingBubbles = () => {
-  // Generate random bubbles
   const bubbles = useMemo(() => {
     return Array.from({ length: 10 }, (_, index) => ({
       id: index,
-      size: Math.random() * 90, // Random size between 30-80px
-      delay: Math.random() * 10, // Random initial delay
-      duration: Math.random() * 100 + 5, // Random animation duration
-      x: Math.random() * 100, // Random horizontal movement
-      initialX: Math.random() * window.innerWidth // Random starting x position
+      size: Math.random() * 90, 
+      delay: Math.random() * 10, 
+      duration: Math.random() * 100 + 5, 
+      x: Math.random() * 100, 
+      initialX: Math.random() * window.innerWidth 
     }));
   }, []);
 
@@ -25,7 +24,7 @@ const FloatingBubbles = () => {
                 opacity: 0,
                 scale: bubble.size / 50
             }}
-            src='../image-assets/bubble.png'
+            src='/image-assets/bubble.png'
             animate={{
                 y: '-1700%',
                 x: bubble.initialX + bubble.x,

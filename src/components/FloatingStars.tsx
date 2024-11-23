@@ -21,7 +21,7 @@ const FloatingStars = () => {
                 opacity: 0,
                 scale:0,
             }}
-            src='../image-assets/sparkles.png'
+            src='/image-assets/sparkles.png'
             animate={{
                 opacity: [0.7, 1, 0.8],
                 scale:[0,1,0.4],

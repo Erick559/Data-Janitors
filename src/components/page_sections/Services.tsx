@@ -24,7 +24,7 @@ const Services = () => {
             </div>
             <div className="block h-full xl:absolute xl:top-24 xl:-right-56">
             <div className="w-full h-full">
-                <img className="mockup-image" src="../../image-assets/mockup.png" alt="model of a laptop" />
+                <img className="mockup-image" src="/image-assets/mockup.png" alt="model of a laptop" />
             </div>
             </div>
         </div>

@@ -22,7 +22,7 @@ const Features = () => {
                         <h1 className="primary-header text-3xl sm:text-4xl z-5">Data Cleaning</h1>
                         <p className="text-lg w-[30ch]">Describe your data needs in plain English, and watch our AI make it happen.</p>
                     </div>
-                    <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px]" src="../../image-assets/soap-bottles.png" alt="Soap Bottles with data janitors emblem resembling how they produce clean data"/>
+                    <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px]" src="/image-assets/soap-bottles.png" alt="Soap Bottles with data janitors emblem resembling how they produce clean data"/>
                     </div>
                 </div>
 
@@ -32,7 +32,7 @@ const Features = () => {
                         <h1 className="primary-header text-3xl sm:text-4xl">Automated Processes</h1>
                         <p className="text-lg w-[30ch]">Describe your data needs in plain English, and watch our AI make it happen.</p>
                     </div>
-                    <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px] order-2 md:order-1" src="../../image-assets/cloud-mop.png" alt="A mop cleaning the cloud resembling how at Data janitors data is cleaned"/>
+                    <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px] order-2 md:order-1" src="/image-assets/cloud-mop.png" alt="A mop cleaning the cloud resembling how at Data janitors data is cleaned"/>
                     </div>
                 </div>
                 </div>
@@ -46,7 +46,7 @@ const Features = () => {
                 description="In today's data-driven world, the ability to quickly clean and transform data is your competitive edge. Data Janitors leverages advanced AI to turn your data requests into reality, ensuring your information is spotless, reliable, and ready for action."
                 primaryButton="Get Personalized Demo"
                 imageStyling="w-full h-full -rotate-[15deg]"
-                src="../../image-assets/aws-soap.png"
+                src="/image-assets/aws-soap.png"
                 alt="Soap with the words AWS in the middle to resemble data cleaning."
                 animated
                 variant={imageVariants}

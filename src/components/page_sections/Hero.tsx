@@ -37,7 +37,7 @@ const Hero = ({imageVariants}:Hero) => {
         <FloatingBubbles />
         <FloatingStars />
         <HeroImages 
-          src='../../image-assets/soap.png' 
+          src='/image-assets/soap.png' 
           alt='A pink soap floating at the top right of the screen resembling clean data from Data janitors' 
           className='absolute top-0 right-0 w-fluid-image z-[1]' 
           variants={imageVariants} animate='animate' 
@@ -45,7 +45,7 @@ const Hero = ({imageVariants}:Hero) => {
         />
 
         <HeroImages 
-          src='../../image-assets/glove.png' 
+          src='/image-assets/glove.png' 
           alt='A cleaning glove at the bottom left of the screen resembling how hands on and deep Data Janitors are when it comes to cleaning data.' 
           className='absolute bottom-0 -left-10 md:bottom-10 md:left-0 z-[1] w-fluid-image-small' 
           variants={sweepVariants} animate='animate' 
@@ -53,7 +53,7 @@ const Hero = ({imageVariants}:Hero) => {
         />
 
         <HeroImages 
-          src='../../image-assets/brush.png' 
+          src='/image-assets/brush.png' 
           alt='A cleaning brush at the bottom right of the screen resembling how hands on and deep Data Janitors are when it comes to cleaning data.' 
           className='absolute -right-20 -bottom-10 md:right-0 z-[1] w-fluid-image' 
           variants={sweepVariants} animate='animate' 
@@ -61,7 +61,7 @@ const Hero = ({imageVariants}:Hero) => {
         />
 
         <div className="absolute top-0 left-0 z-0 hidden">
-          <img src="../../image-assets/mop.webp" alt=""  className='w-[200px]'/>
+          <img src="/image-assets/mop.webp" alt=""  className='w-[200px]'/>
         </div>
       </div>
     </main>

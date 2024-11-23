@@ -31,7 +31,7 @@ const NavigationBar = () => {
     <motion.header variants={NavigationBarVariants} animate={isScrolling ? 'scrolling' : 'notScrolling'} transition={{duration:0.3,ease:'easeIn'}} className="fixed top-0 2 w-full py-3 px-3 flex items-center lg:px-20 z-20">
       <nav className="flex justify-between items-center w-full">
         <div>
-          <img className="w-[70px] h-[55px] md:w-[80px] md:h-[60px]" src="../image-assets/data-janitors logo.png" width={200} height={200} alt="Data janitors logo featuring two caricatures holding mopes" />
+          <img className="w-[70px] h-[55px] md:w-[80px] md:h-[60px]" src="/image-assets/data-janitors logo.png" width={200} height={200} alt="Data janitors logo featuring two caricatures holding mopes" />
         </div>
         <div className="hidden md:block">
           <ul className="flex gap-3 md:gap-5 xl:gap-10">

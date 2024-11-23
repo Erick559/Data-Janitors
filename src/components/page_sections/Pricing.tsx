@@ -19,10 +19,10 @@ const Pricing = () => {
             <img width={500} height={500} src="../../image-assets/soap-bubble.png" alt="Purple soap bubbles" />
         </div>
         <div className="absolute bottom-48 md:bottom-0 -right-[200px] -z-20 w-[150px] md:w-[300px]">
-          <img width={500} height={500} className="scale-x-[-1] -rotate-[35deg]" src="../../image-assets/soap-bubble.png" alt="Purple soap bubbles" />
+          <img width={500} height={500} className="scale-x-[-1] -rotate-[35deg]" src="/image-assets/soap-bubble.png" alt="Purple soap bubbles" />
         </div>
         <div className="absolute bottom-48 md:-top-36 -right-32 -z-20 w-[150px] md:w-[300px]">
-          <img width={500} height={500} className="scale-x-[-1] -rotate-[35deg]" src="../../image-assets/soap-bubble-pattern.png" alt="Purple soap bubbles" />
+          <img width={500} height={500} className="scale-x-[-1] -rotate-[35deg]" src="/image-assets/soap-bubble-pattern.png" alt="Purple soap bubbles" />
         </div>
     </section>
   )
