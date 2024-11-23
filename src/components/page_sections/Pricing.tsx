@@ -14,8 +14,8 @@ const Pricing = () => {
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:px-1 xl:px-20">
-            <PriceCards planType="Basic plan" planDescription="Our most popular plan for small teams." price="10" precededBy="free plan" features={basicFeatures}/>
-            <PriceCards planType="Business plan" planDescription="Advanced features and reporting" price="20" precededBy="basic plan" popular features={businessFeatures}/>
+            <PriceCards planType="Basic plan" planDescription="Our most popular plan for small teams." price={10} precededBy="free plan" features={basicFeatures}/>
+            <PriceCards planType="Business plan" planDescription="Advanced features and reporting" price={20} precededBy="basic plan" popular features={businessFeatures}/>
             </div>
         </main>
         <StaticBubble className="top-20 md:top-0 -left-10" />

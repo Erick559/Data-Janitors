@@ -1,11 +1,12 @@
 import { Check } from "lucide-react";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card"
 import PrimaryButton from "./PrimaryButton";
+import { CountUp } from "./CountUp";
 
 interface PriceCards {
     planType: string;
     planDescription:string;
-    price:string;
+    price:number;
     precededBy:string;
     features:string[];
     popular?:boolean;
@@ -28,7 +29,7 @@ const PriceCards = ({planType,planDescription,price,precededBy,features,popular}
                     <p className="text-[#475467] w-[15ch] sm:w-full">{planDescription}</p>
                 </div>
                 <div>
-                    <h1 className="primary-header text-3xl sm:text-5xl">${price}/mth</h1>
+                    <CountUp end={price} duration={5} suffix="/mth" />
                 </div>
             </div>
         </CardHeader>
