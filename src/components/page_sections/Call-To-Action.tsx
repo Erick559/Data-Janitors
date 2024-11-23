@@ -21,11 +21,12 @@ const CallToAction = ({imageStyling,src,alt,title,titleDescription,description,p
     <main className="flex flex-col md:items-center md:flex-row lg:px-14 md:justify-center md:gap-4 lg:gap-6">
       <div className="w-full relative flex justify-center">
         {!animated ? 
-            <img width={1500} height={1500} className={`${imageStyling}`} src={src} alt={alt} />
+            <img width={1500} height={1500} className={`${imageStyling} z-10`} src={src} alt={alt} />
 
         :
-            <motion.img variants={variant} animate='animate' transition={{ duration: 5, repeat:Infinity, ease: 'linear' }} width={1500} height={1500} className={`${imageStyling}`} src={src} alt={alt} />    
+            <motion.img variants={variant} animate='animate' transition={{ duration: 5, repeat:Infinity, ease: 'linear' }} width={1500} height={1500} className={`${imageStyling} z-10`} src={src} alt={alt} />    
         }
+        <FloatingStars size={10} />
       </div>
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-3">
@@ -49,7 +50,6 @@ const CallToAction = ({imageStyling,src,alt,title,titleDescription,description,p
         </div>
       </div>
     </main>
-    <FloatingStars/>
   </section>
   )
 }

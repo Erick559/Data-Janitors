@@ -29,7 +29,7 @@ const PriceCards = ({planType,planDescription,price,precededBy,features,popular}
                     <p className="text-[#475467] w-[15ch] sm:w-full">{planDescription}</p>
                 </div>
                 <div>
-                    <CountUp end={price} duration={5} suffix="/mth" />
+                    <CountUp end={price} duration={3} suffix="/mth" />
                 </div>
             </div>
         </CardHeader>

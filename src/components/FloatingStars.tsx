@@ -2,9 +2,13 @@ import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import Sparkles from '../image-assets/sparkles.png'
 
-const FloatingStars = () => {
+interface FloatingStars {
+  size: number;
+}
+
+const FloatingStars = ({size}:FloatingStars) => {
   const stars = useMemo(() => {
-    return Array.from({ length: 15 }, (_, index) => ({
+    return Array.from({ length: size }, (_, index) => ({
       id: index,
       size: Math.random() * 10 + 40,
       delay: Math.random() * 50, 

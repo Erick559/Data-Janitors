@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
-import { motion, useSpring, useTransform , useInView } from 'framer-motion'
+import { useRef, useEffect } from 'react'
+import { motion, useSpring, useTransform, useInView } from 'framer-motion'
 
 interface CountUpProps {
   end: number
@@ -9,23 +9,30 @@ interface CountUpProps {
 }
 
 export const CountUp = ({ end, duration = 2, prefix = '', suffix = '' }:CountUpProps) => {
-  const springValue = useSpring(0, { duration: duration * 1000 })
+  const textContainer = useRef<HTMLDivElement>(null)
+  const isInView = useInView(textContainer, { once: true, amount: 0.5 })
+  const initialValue = useRef(0)
+  
+  const springValue = useSpring(initialValue.current, { 
+    duration: duration * 1000,
+    bounce: 0
+  })
+  
   const displayValue = useTransform(springValue, (latest) => Math.floor(latest))
-  const textContainer = useRef(null);
 
-  const isInView = useInView(textContainer,{once:true});
-
-  React.useEffect(() => {
-    if(isInView) {
-        springValue.set(end)
+  useEffect(() => {
+    if (isInView) {
+      initialValue.current = 0
+      springValue.set(end)
     }
-  }, [end, springValue,isInView]);
+  }, [isInView, end, springValue])
 
   return (
     <div ref={textContainer} className="primary-header text-3xl sm:text-5xl">
       {prefix}
-      <motion.span className=''>{displayValue}</motion.span>
+      <motion.span>{displayValue}</motion.span>
       {suffix}
     </div>
   )
 }
+
