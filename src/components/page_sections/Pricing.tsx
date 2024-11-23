@@ -1,7 +1,7 @@
 import PriceCards from "../PriceCards";
 import StaticBubble from "../staticBubble";
 
-import SoapBubblePattern from '../../image-assets/soap-bubble-pattern.png'
+import SoapBubblePattern from '../../image-assets/soap-bubble-pattern.webp'
 
 const Pricing = () => {
     const basicFeatures = ['Access to basic features','Basic reporting + analytics', 'Up to 10 individual users', '20GB individual data', 'Basic chat support', 'Attend Events', 'Automatic updates', 'Backup your account', 'Audit log and notes', 'Feature request'];

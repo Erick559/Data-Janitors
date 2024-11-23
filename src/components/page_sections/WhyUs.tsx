@@ -1,8 +1,8 @@
 import StaticBubble from "../staticBubble"
 import CallToAction from "./Call-To-Action"
-import AWSFoam from '../../image-assets/aws-foam.png'
-import soapBottles from '../../image-assets/soap-bottles.png'
-import cloudMop from '../../image-assets/cloud-mop.png'
+import AWSFoam from '../../image-assets/aws-foam.webp'
+import soapBottles from '../../image-assets/soap-bottles.webp'
+import cloudMop from '../../image-assets/cloud-mop.webp'
 import FeatureCard from "../FeatureCard"
 
 const WhyUs = () => {

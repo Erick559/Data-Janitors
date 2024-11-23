@@ -34,7 +34,7 @@ h1 {
 }
 
 .hero {
-  background-image: url('./image-assets/hero-image.png');
+  background-image: url('./image-assets/hero-image.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

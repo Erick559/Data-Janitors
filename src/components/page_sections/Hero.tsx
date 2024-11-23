@@ -4,9 +4,9 @@ import FloatingBubbles from '../FloatingBubble'
 import FloatingStars from '../FloatingStars'
 import HeroImages from '../HeroImages'
 
-import Soap from '../../image-assets/soap.png'
-import Glove from '../../image-assets/glove.png'
-import Brush from '../../image-assets/brush.png'
+import Soap from '../../image-assets/soap.webp'
+import Glove from '../../image-assets/glove.webp'
+import Brush from '../../image-assets/brush.webp'
 import Mop from '../../image-assets/mop.webp'
 interface Hero {
     imageVariants:{}

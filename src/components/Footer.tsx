@@ -1,5 +1,5 @@
 import { footerLinks } from "../../const"
-import Logo from '../image-assets/data-janitors logo.png'
+import Logo from '../image-assets/data-janitors logo.webp'
 
 const Footer = () => {
   return (

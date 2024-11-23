@@ -1,4 +1,4 @@
-import SoapBubbles from '../image-assets/soap-bubble.png'
+import SoapBubbles from '../image-assets/soap-bubble.webp'
 
 interface staticBubble {
     className: string;

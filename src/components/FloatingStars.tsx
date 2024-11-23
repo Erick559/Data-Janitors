@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import Sparkles from '../image-assets/sparkles.png'
+import Sparkles from '../image-assets/sparkles.webp'
 
 interface FloatingStars {
   size: number;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {motion, useMotionValueEvent, useScroll} from 'framer-motion'
 
 import { navLinks } from '../../const';
-import Logo from '../image-assets/data-janitors logo.png'
+import Logo from '../image-assets/data-janitors logo.webp'
 import PrimaryButton from "./PrimaryButton";
 const MobileNavigationBar = React.lazy(()=> import ("./MobileNavigationBar"));
 

@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 
-import Bubble from '../image-assets/bubble.png'
+import Bubble from '../image-assets/bubble.webp'
 
 const FloatingBubbles = () => {
   const bubbles = useMemo(() => {

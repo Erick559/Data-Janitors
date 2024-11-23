@@ -1,4 +1,4 @@
-import Mockup from '../../image-assets/mockup.png'
+import Mockup from '../../image-assets/mockup.webp'
 
 const Services = () => {
   return (
