@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
+import Sparkles from '../image-assets/sparkles.png'
 
 const FloatingStars = () => {
   const stars = useMemo(() => {
@@ -21,7 +22,8 @@ const FloatingStars = () => {
                 opacity: 0,
                 scale:0,
             }}
-            src='/image-assets/sparkles.png'
+            src={Sparkles}
+            alt='Sparkles highlighting the clean data Data janitors offer.'
             animate={{
                 opacity: [0.7, 1, 0.8],
                 scale:[0,1,0.4],

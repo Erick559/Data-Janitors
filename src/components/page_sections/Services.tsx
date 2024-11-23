@@ -1,3 +1,5 @@
+import Mockup from '../../image-assets/mockup.png'
+
 const Services = () => {
   return (
     <section className="min-h-screen overflow-hidden p-12 md:pb-16 md:px-5 lg:px-10 relative">
@@ -24,7 +26,7 @@ const Services = () => {
             </div>
             <div className="block h-full xl:absolute xl:top-24 xl:-right-56">
             <div className="w-full h-full">
-                <img className="mockup-image" src="/image-assets/mockup.png" alt="model of a laptop" />
+                <img className="mockup-image" src={Mockup} alt="model of a laptop" />
             </div>
             </div>
         </div>

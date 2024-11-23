@@ -1,5 +1,9 @@
 import StaticBubble from "../staticBubble"
 import CallToAction from "./Call-To-Action"
+import AWSFoam from '../../image-assets/aws-foam.png'
+import soapBottles from '../../image-assets/soap-bottles.png'
+import cloudMop from '../../image-assets/cloud-mop.png'
+import FeatureCard from "../FeatureCard"
 
 const WhyUs = () => {
   return (
@@ -11,35 +15,28 @@ const WhyUs = () => {
                 </header>
 
                 <div className="flex flex-col items-center gap-10 w-full">
-                    <div className="w-full flex justify-center">
-                        <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 w-full max-w-[950px]">
-                            <div className="text-center md:text-left flex flex-col items-center md:items-start gap-4">
-                                <h1 className="primary-header text-3xl sm:text-4xl z-5">Intuitive Control</h1>
-                                <p className="text-lg w-[30ch]">Describe your data needs in plain English, and watch our AI make it happen.</p>
-                            </div>
-                            <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px]" src="/image-assets/soap-bottles.png" alt="Soap Bottles with data janitors emblem resembling how they produce clean data"/>
-                        </div>
-                    </div>
+                    <FeatureCard 
+                        title="Intuitive Control" 
+                        description="Describe your data needs in plain English, and watch our AI make it happen." 
+                        src={soapBottles} 
+                        alt="Soap Bottles with data janitors emblem resembling how they produce clean data" 
+                    />
 
-                    <div className="w-full flex justify-center">
-                        <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 w-full max-w-[950px]">
-                            <div className="text-center md:text-left flex flex-col items-center md:items-start gap-4 order-1 md:order-2">
-                                <h1 className="primary-header text-3xl sm:text-4xl">Powerful Transformations</h1>
-                                <p className="text-lg w-[30ch]">Our system orchestrates a wide array of data tools to meet your specific requirements.</p>
-                            </div>
-                            <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px] order-2 md:order-1" src="/image-assets/cloud-mop.png" alt="A mop cleaning the cloud resembling how at Data janitors data is cleaned"/>
-                        </div>
-                    </div>
+                    <FeatureCard 
+                        title="Powerful Transformations" 
+                        description="Our system orchestrates a wide array of data tools to meet your specific requirements." 
+                        src={cloudMop} 
+                        alt="A mop cleaning the cloud resembling how at Data janitors data is cleaned." 
+                        orderImage="order-2 md:order-1"
+                        orderText="order-1 md:order-2"
+                    />
 
-                    <div className="w-full flex justify-center">
-                        <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 w-full max-w-[950px]">
-                            <div className="text-center md:text-left flex flex-col items-center md:items-start gap-4">
-                                <h1 className="primary-header text-3xl sm:text-4xl">Continous Learning</h1>
-                                <p className="text-lg w-[30ch]">With each task, our AI gets smarter, ensuring ever-improving results.</p>
-                            </div>
-                            <img width={500} height={500} className="w-[350px] h-[320px] lg:w-[380px] lg:h-[350px]" src="/image-assets/soap-bottles.png" alt="Soap Bottles with data janitors emblem resembling how they produce clean data"/>
-                        </div>
-                    </div>
+                    <FeatureCard 
+                        title="Continuos Learning" 
+                        description="With each task, our AI gets smarter, ensuring ever-improving results." 
+                        src={soapBottles} 
+                        alt="Soap Bottles with data janitors emblem resembling how they produce clean data." 
+                    />
                 </div>
             </main>
 
@@ -53,7 +50,7 @@ const WhyUs = () => {
                 primaryButton="Signup to our Wishlist"
                 secondPrimaryButton="Schedule Free Consultation" 
                 imageStyling="w-[400px] h-[400px]"
-                src="/image-assets/aws-foam.png"
+                src={AWSFoam}
                 alt="Foam with the words AWS in the middle to resemble data cleaning."
         />
     </div>

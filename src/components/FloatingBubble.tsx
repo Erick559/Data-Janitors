@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 
+import Bubble from '../image-assets/bubble.png'
+
 const FloatingBubbles = () => {
   const bubbles = useMemo(() => {
     return Array.from({ length: 10 }, (_, index) => ({
@@ -24,7 +26,7 @@ const FloatingBubbles = () => {
                 opacity: 0,
                 scale: bubble.size / 50
             }}
-            src='/image-assets/bubble.png'
+            src={Bubble}
             animate={{
                 y: '-1700%',
                 x: bubble.initialX + bubble.x,

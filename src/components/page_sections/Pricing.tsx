@@ -1,4 +1,7 @@
 import PriceCards from "../PriceCards";
+import StaticBubble from "../staticBubble";
+
+import SoapBubblePattern from '../../image-assets/soap-bubble-pattern.png'
 
 const Pricing = () => {
     const basicFeatures = ['Access to basic features','Basic reporting + analytics', 'Up to 10 individual users', '20GB individual data', 'Basic chat support', 'Attend Events', 'Automatic updates', 'Backup your account', 'Audit log and notes', 'Feature request'];
@@ -15,14 +18,10 @@ const Pricing = () => {
             <PriceCards planType="Business plan" planDescription="Advanced features and reporting" price="20" precededBy="basic plan" popular features={businessFeatures}/>
             </div>
         </main>
-        <div className="absolute top-20 md:top-0 -left-10 -z-20 w-[150px] md:w-[300px]">
-            <img width={500} height={500} src="../../image-assets/soap-bubble.png" alt="Purple soap bubbles" />
-        </div>
-        <div className="absolute bottom-48 md:bottom-0 -right-[200px] -z-20 w-[150px] md:w-[300px]">
-          <img width={500} height={500} className="scale-x-[-1] -rotate-[35deg]" src="/image-assets/soap-bubble.png" alt="Purple soap bubbles" />
-        </div>
+        <StaticBubble className="top-20 md:top-0 -left-10" />
+        <StaticBubble className="bottom-48 md:bottom-0 -right-[200px]" imageStyling="scale-x-[-1] -rotate-[35deg]" />
         <div className="absolute bottom-48 md:-top-36 -right-32 -z-20 w-[150px] md:w-[300px]">
-          <img width={500} height={500} className="scale-x-[-1] -rotate-[35deg]" src="/image-assets/soap-bubble-pattern.png" alt="Purple soap bubbles" />
+          <img width={500} height={500} className="scale-x-[-1] -rotate-[35deg]" src={SoapBubblePattern} alt="Purple soap bubbles" />
         </div>
     </section>
   )

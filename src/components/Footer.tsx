@@ -1,4 +1,5 @@
 import { footerLinks } from "../../const"
+import Logo from '../image-assets/data-janitors logo.png'
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-5 sm:justify-between pt-10 border-t-2 border-white">
                 <div>
-                    <img width={1000} height={1000} className="w-24 h-20" src="/image-assets/data-janitors logo.png" alt="Data janitors logo featuring two caricatures holding a mop ready to clean your data." />
+                    <img width={1000} height={1000} className="w-24 h-20" src={Logo} alt="Data janitors logo featuring two caricatures holding a mop ready to clean your data." />
                 </div>
                 <div className="text-center">
                     <p>© 2024 Data Janitors UI. All rights reserved.</p>
