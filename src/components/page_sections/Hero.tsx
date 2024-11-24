@@ -22,11 +22,11 @@ const Hero = ({imageVariants}:Hero) => {
   return (
     <section id="hero" className="hero lg:min-h-screen overflow-hidden relative">
     <main className='h-full py-[150px] px-3 flex flex-col items-center justify-center md:justify-start gap-10 md:gap-24'>
-      <motion.div initial={{scale:0}} animate={{scale:1}} transition={{type:"spring", bounce:0.5, duration:1}} className="flex w-full justify-center z-[1]">
+      <motion.div initial={{scale:0}} animate={{scale:1}} transition={{type:"spring", bounce:0.5, duration:1,delay:2}} className="flex w-full justify-center z-[1]">
         <motion.h1 animate={{rotate:['-3deg','3deg','-3deg']}} transition={{duration:1,repeat:Infinity,repeatDelay:10 }} className="font-Rubik text-[#fc472e] leading-[90px] md:leading-[170px] xl:leading-[220px] text-center tracking-[5px] md:tracking-[10px] md:-rotate-[5.77deg] font-black main-header">DATA JANITORS</motion.h1>
       </motion.div>
 
-      <div className="flex flex-col md:flex-row justify-center w-full gap-3 z-10">
+      <motion.div initial={{scale:0}} animate={{scale:1}} transition={{type:"spring", bounce:0.5, duration:1,delay:2}} className="flex flex-col md:flex-row justify-center w-full gap-3 z-10">
         <PrimaryButton type="primary" className="px-7 py-6 text-[16px] rounded-xl shadow-sm z-[1]">
           Signup to our Wishlist
         </PrimaryButton>
@@ -34,7 +34,7 @@ const Hero = ({imageVariants}:Hero) => {
         <PrimaryButton type="ghost" className="px-7 py-6 text-[16px] rounded-xl shadow-sm z-[1]">
           Schedule Free Consultation
         </PrimaryButton>
-      </div>
+      </motion.div>
 
 
       <div className='absolute inset-0'>
@@ -64,8 +64,8 @@ const Hero = ({imageVariants}:Hero) => {
           transition={{duration:2,ease:'easeInOut',repeat:Infinity,delay:7,repeatDelay:5}} 
         />
 
-        <div className="absolute top-0 left-0 z-0 hidden">
-          <img src={Mop} alt="A mop showcasing the cleaning abilities of data janitors."  className='w-[200px]'/>
+        <div className="absolute top-0 left-0 z-0">
+          <motion.img initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, delay:4, type:"spring", bounce:0.5,}} src={Mop} alt="A mop showcasing the cleaning abilities of data janitors."  className='w-fluid-image'/>
         </div>
       </div>
     </main>
