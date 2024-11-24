@@ -65,7 +65,7 @@ const Hero = ({imageVariants}:Hero) => {
         />
 
         <div className="absolute top-0 left-0 z-0">
-          <motion.img initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, delay:4, type:"spring", bounce:0.5,}} src={Mop} alt="A mop showcasing the cleaning abilities of data janitors."  className='w-fluid-image'/>
+          <motion.img loading='lazy' initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, delay:4, type:"spring", bounce:0.5,}} src={Mop} alt="A mop showcasing the cleaning abilities of data janitors."  className='w-fluid-image'/>
         </div>
       </div>
     </main>
