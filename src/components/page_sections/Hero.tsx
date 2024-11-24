@@ -4,6 +4,7 @@ import FloatingBubbles from '../FloatingBubble'
 import FloatingStars from '../FloatingStars'
 import HeroImages from '../HeroImages'
 
+import backgroundImage from '../../image-assets/hero-image.webp'
 import Soap from '../../image-assets/soap.webp'
 import Glove from '../../image-assets/glove.webp'
 import Brush from '../../image-assets/brush.webp'
@@ -69,6 +70,9 @@ const Hero = ({imageVariants}:Hero) => {
         </div>
       </div>
     </main>
+    <div className='absolute inset-0 w-full h-full -z-10'>
+      <img loading='eager' src={backgroundImage} alt="Data Janitors background image." className='w-full h-full object-cover' width={1700}  height={1000}/>
+    </div>
   </section>  )
 }
 
