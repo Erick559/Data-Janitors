@@ -29,8 +29,8 @@ const NavigationBar = () => {
   }
 
   return (
-    <motion.header variants={NavigationBarVariants} animate={isScrolling ? 'scrolling' : 'notScrolling'} transition={{duration:0.3,ease:'easeIn'}} className="fixed top-0 2 w-full py-3 px-3 flex items-center lg:px-20 z-20">
-      <nav className="flex justify-between items-center w-full">
+    <motion.header initial={{opacity:0,y:-100}} animate={{opacity:1,y:0}} transition={{duration:1,delay:2,ease:'easeInOut'}} className="fixed top-0 w-full z-20">
+      <motion.nav variants={NavigationBarVariants} animate={isScrolling ? 'scrolling' : 'notScrolling'} transition={{duration:0.3,ease:'easeIn'}} className='flex justify-between items-center w-full py-3 px-3 lg:px-20'>
         <div>
           <img className="w-[70px] h-[55px] md:w-[80px] md:h-[60px]" src={Logo} width={200} height={200} alt="Data janitors logo featuring two caricatures holding mopes" />
         </div>
@@ -51,7 +51,7 @@ const NavigationBar = () => {
         <div className="flex items-center md:hidden">
           <MobileNavigationBar />
         </div>
-      </nav>
+      </motion.nav>
     </motion.header>
   )
 }
