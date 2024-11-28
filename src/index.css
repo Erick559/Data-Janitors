@@ -77,7 +77,7 @@ h1 {
     width: 56.25rem;
     width: clamp(56.25rem, -60.625rem + 137.5vw, 70rem);
     height: 40.625rem;
-    height: clamp(40.625rem, -92.1875rem + 156.25vw, 56.25rem);
+    height: clamp(40.625rem, 37.56377551020408rem + 15.306122448979592vw, 50rem);
   }
 }
 
