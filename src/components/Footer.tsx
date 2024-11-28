@@ -1,10 +1,11 @@
 import { footerLinks } from "../../const"
 import Logo from '../image-assets/data-janitors logo.webp'
+import FloatingBubbles from "./FloatingBubble"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#27327E] text-slate-50 p-5 md:py-16 md:px-5 lg:px-20">
-        <div className="flex flex-col gap-20">
+    <footer className="bg-[#27327E] text-slate-50 p-5 md:py-16 md:px-5 lg:px-20 overflow-hidden">
+        <div className="flex flex-col gap-20 relative">
             <div className="flex flex-wrap gap-10 justify-between">
                 {footerLinks.map((section,index)=>(
                     <div className="flex flex-col gap-3 p-5" key={index}>
@@ -30,6 +31,7 @@ const Footer = () => {
                     <p>© 2024 Data Janitors UI. All rights reserved.</p>
                 </div>
             </div>
+            <FloatingBubbles startingSize={50}/>
         </div>
     </footer>
   )

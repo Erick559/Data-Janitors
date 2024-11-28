@@ -3,11 +3,15 @@ import { motion } from 'framer-motion';
 
 import Bubble from '../image-assets/bubble.webp'
 
-const FloatingBubbles = () => {
+interface TypeFloatingBubbles {
+  startingSize?: number;
+}
+
+const FloatingBubbles = ({startingSize}:TypeFloatingBubbles) => {
   const bubbles = useMemo(() => {
     return Array.from({ length: 10 }, (_, index) => ({
       id: index,
-      size: Math.random() * 90, 
+      size: Math.random() * (startingSize ?? 90), 
       delay: Math.random() * 10, 
       duration: Math.random() * 100 + 5, 
       x: Math.random() * 100, 
@@ -39,7 +43,7 @@ const FloatingBubbles = () => {
                 repeat: Infinity,
                 ease: 'easeInOut'
             }}
-            className='pointer-events-none'
+            className='pointer-events-none backdrop-blur-sm'
             style={{
                 opacity:0,
                 position: 'absolute',
