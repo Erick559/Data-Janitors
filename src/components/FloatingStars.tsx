@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import Sparkles from '../image-assets/sparkles.webp'
 
+
 interface FloatingStars {
   size: number;
 }
@@ -30,13 +31,19 @@ const FloatingStars = ({size}:FloatingStars) => {
             alt='Sparkles highlighting the clean data Data janitors offer.'
             animate={{
                 opacity: [0.7, 1, 0.8],
-                scale:[0,1,0.4],
+                scale: [0, 0.8, 0],
+                filter: 'blur(1px) brightness(350%)'
             }}
             transition={{
-                duration: 2,
+                duration: 1.5,
                 delay: stars.delay,
                 repeat: Infinity,
+                repeatDelay:stars.delay,
                 ease: 'easeInOut',
+            }}
+            exit={{
+              opacity: 0,
+              scale: 0,
             }}
             className='pointer-events-none'
             style={{

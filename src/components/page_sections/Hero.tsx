@@ -40,7 +40,7 @@ const Hero = ({imageVariants}:Hero) => {
 
       <div className='absolute inset-0'>
         <FloatingBubbles />
-        <FloatingStars size={15} />
+        <FloatingStars size={25} />
         <HeroImages 
           src={Soap} 
           alt='A pink soap floating at the top right of the screen resembling clean data from Data janitors' 

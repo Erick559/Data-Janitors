@@ -43,7 +43,7 @@ const FloatingBubbles = ({startingSize}:TypeFloatingBubbles) => {
                 repeat: Infinity,
                 ease: 'easeInOut'
             }}
-            className='pointer-events-none backdrop-blur-3xl'
+            className='pointer-events-none backdrop-blur-3xl rounded-full'
             style={{
                 opacity:0,
                 position: 'absolute',
